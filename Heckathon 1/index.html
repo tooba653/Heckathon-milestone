@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interaction Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="resume-container">
+    <!-- Left Section -->
+    <div class="left-section">
+        <img src="\pic.jpg" alt="Profile Picture" class="profile-picture">
+        <section id="objective">
+            <h3><b>Career Objective</b></h3>
+            <p>To secure an employment opportunity with a progressive organization, where I can utilize my professional skills and knowledge to add value to the organization's growth.</p>
+        </section>
+        <section id="certification">
+            <h3><b>Certifications</b></h3> 
+            <p><b>Artificial Intelligence, Web 3.0 & Metaverse:</b> From Governor House Karachi (Ongoing)</p>   
+        </section>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <h1><b>Static Interactive Resume!!</b></h1>
+        
+        <!-- Personal Information -->
+        <section id="personal-info">
+            <h3><b>Personal Information</b></h3>
+            <p><b>Name:</b> Tooba Yameen</p>
+            <p><b>Phone:</b> 03452168078</p>
+            <p><b>Email:</b> <a href="mailto:yameentooba653@gmail.com">yameentooba653@gmail.com</a></p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h3><b>Education</b></h3>
+            <p><b>Matric:</b> Board of Secondary Education Karachi</p>
+            <p><b>Intermediate:</b> Board of Intermediate Education Karachi</p>
+            <p><b>Bachelors:</b> Metropolitan University Karachi</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="visible">
+            <h3><b>Skills</b></h3>
+            <ul>
+                <li>C++</li>
+                <li>MS Office</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Editing</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience">
+            <h3>Work Experience</h3>
+            <p><b>Seeking an opportunity as a fresh candidate to start my professional career.</b></p>
+        </section>
+
+        <!-- Button to toggle skills section -->
+        <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+    </div>
+</div>
+
+<script>
+// JavaScript to toggle visibility of the skills section
+document.getElementById('toggle-skills').addEventListener('click', function() {
+    var skillsSection = document.getElementById('skills');
+    skillsSection.classList.toggle('hidden');
+});
+</script>
+</body>
+</html>
